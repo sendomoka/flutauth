@@ -19,9 +19,9 @@ class AButton extends StatelessWidget {
         child: Container(
           width: double.infinity,
           height: 55,
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(10))
+          decoration: BoxDecoration(
+            color: text == 'Continue with Google' ? const Color.fromARGB(50, 255, 255, 255) : Colors.white,
+            borderRadius: const BorderRadius.all(Radius.circular(10))
           ),
           child: Center(
             child: Row(
@@ -38,8 +38,8 @@ class AButton extends StatelessWidget {
                   ),
                 Text(
                   text,
-                  style: const TextStyle(
-                    color: Colors.black,
+                  style: TextStyle(
+                    color: text == 'Continue with Google' ? Colors.white : Colors.black,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
