@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083729949783",
+    "project_id": "flutauth-776a1",
+    "storage_bucket": "flutauth-776a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083729949783:android:9653813680312883b11f12",
+        "android_client_info": {
+          "package_name": "com.example.auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgB-nU3Mfdp8pITT8q0acc3svJOB69n4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
