@@ -39,7 +39,7 @@ class _ATextFieldState extends State<ATextField> {
 
     if (widget.hintText == 'Email') {
       prefixIcon = Icons.email_outlined;
-    } else if (widget.hintText == 'Password') {
+    } else if (widget.hintText == 'Password' || widget.hintText == 'Konfirmasi Password') {
       prefixIcon = Icons.lock_outline;
       suffixIcon = _obscureText ? Icons.visibility : Icons.visibility_off;
     } else {

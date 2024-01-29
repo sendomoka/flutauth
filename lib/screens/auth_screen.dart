@@ -1,5 +1,5 @@
+import 'package:auth/screens/choose_auth_screen.dart';
 import 'package:auth/screens/home_screen.dart';
-import 'package:auth/screens/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +15,7 @@ class AuthScreen extends StatelessWidget {
           if (snapshot.hasData) {
             return HomeScreen();
           } else {
-            return LoginScreen();
+            return ChooseAuthScreen();
           }
         },
       )
