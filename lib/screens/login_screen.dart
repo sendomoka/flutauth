@@ -2,6 +2,7 @@
 
 import 'package:auth/components/button.dart';
 import 'package:auth/components/textfield.dart';
+import 'package:auth/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -142,7 +143,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       ],
                     ),
                   ),
-                  const AButton(text: 'Continue with Google', onTap: null),
+                  AButton(
+                    text: 'Continue with Google',
+                    onTap: () => AuthService().signInWithGoogle(),
+                  ),
                   const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
